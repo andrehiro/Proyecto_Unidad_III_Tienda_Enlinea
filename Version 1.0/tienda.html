@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="login.html">
+            <img src="Logo_PlushRush.png"
+                width="50" height="50" alt="Logo de la empresa">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="admin.html">Inicio</a>
+                </li>
+                <li class="nav-item" id="menuCatalogo">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acercaDe.html">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="text-center">Tienda en Línea</h1>
+    <div class="container-fluid" id="tiendaEnlinea">
+        <div class="row" id="catalogo">
+            <!-- Las tarjetas de productos se generarán dinámicamente con JavaScript -->
+        </div>
+        <div class="calculator" id="calculator">
+            <div class="display">0</div>
+            <div class="buttons">
+                <button class="botonCalculadora">7</button>
+                <button class="botonCalculadora">8</button>
+                <button class="botonCalculadora">9</button>
+                <button class="botonCalculadora">*</button>
+                <button class="botonCalculadora">4</button>
+                <button class="botonCalculadora">5</button>
+                <button class="botonCalculadora">6</button>
+                <button class="botonCalculadora">-</button>
+                <button class="botonCalculadora">3</button>
+                <button class="botonCalculadora">2</button>
+                <button class="botonCalculadora">1</button>
+                <button class="botonCalculadora">+</button>
+                <button class="botonCalculadora">0</button>
+                <button class="botonCalculadora">/</button>
+                <button class="botonCalculadora">=</button>
+                <button class="botonCalculadora">C</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="row2">
+                <h3 id="tiuloResumenCompra">Resumen de Compra</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resumenCompra">
+                        <!-- Los detalles de la compra se generarán dinámicamente con JavaScript -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td></td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" id="botonFinalizarCompra">Finalizar Compra</button>
+            </div>
+            <div class="col-1.5">
+                <button class="btn btn-primary" id="botonMostrarCalculadora">Calculadora</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>Andre Hidrogo 2023</footer>
+    <script src="scriptCalculadora.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptTienda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

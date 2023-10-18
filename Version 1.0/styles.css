@@ -1,0 +1,173 @@
+#contenedorLogin{
+    margin-top: 15vh;
+}
+
+#imagenCatalogo{
+    width: 300px;
+    height: 300px;
+}
+
+#tituloBienvenida{
+    font-family: "Alex Brush";
+    font-size: 300px;
+    margin-top: 15vh;
+}
+
+/*Modificaion de acerca de*/
+#acercaDeTexto{
+    margin: 20px;
+}
+
+/*Modificacion del ticket*/
+.text-center, #tituloTicket {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+}
+
+.card {
+    text-align: center;
+}
+
+/*Modificacion de los inputs*/
+.card-input {
+    border: none;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.card-input:hover {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.card-input:focus {
+    outline: none;
+}
+
+#inputCatalogo2{
+    margin-bottom: 25px;
+    margin-top: -10px;
+}
+
+#inputCatalogo1{
+    margin-bottom: 25px;
+}
+
+/*Modificacion del boton*/
+button {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+button:hover {
+    color: rgb(205, 205, 205);
+    transition: 0.3s;
+}
+
+#tablaCarrito{
+    margin: auto;
+}
+
+/*Modificaciones del boton catalogo*/
+#botonAgregarProducto {
+    background-color: rgb(0, 180, 0);
+    border-color: rgb(0, 180, 0);
+}
+
+#botonAgregarProducto:hover {
+    background-color: rgb(0, 155, 0);
+    border-color: rgb(0, 155, 0);
+}
+
+#botonEliminar {
+    background-color: red;
+    border-color: red; 
+}
+
+#botonEliminar:hover {
+    background-color: rgb(225, 0, 0);
+    border-color: rgb(225, 0, 0); 
+}
+
+/*Modificaciones de la calculadora*/
+
+.calculator {
+    background-color: #333;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.display {
+    background-color: #444;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.botonCalculadora{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botonCalculadora:hover {
+    background-color: #555;
+}
+
+/*Modificaciones del footer*/
+footer{
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    #tituloBienvenida{
+        font-family: "Alex Brush";
+        font-size: 200px;
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    #tituloBienvenida{
+        font-family: "Alex Brush";
+        font-size: 100px;
+        margin-top: 15vh;
+    }
+}
